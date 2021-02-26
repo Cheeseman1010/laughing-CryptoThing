@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    margin-left: 10px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+
+}
+
+/* Mid Styles */
+@media only screen and (min-width: 650px) and (max-width: 960px) {
+
+}
+
+body {
+    background-color: #F3F8F2;
+}
+
+p {
+    margin: 10px;
+}
+
+h3 {
+    margin: 5px;
+}
+
+h4 {
+    font-style: italic;
+    font-weight: normal;
+    font-size: small;
+    margin: 5px;
+}
+
+.green {
+    color: rgb(0, 202, 0);
+}
+
+.red {
+    color: rgb(199, 64, 116);
+}
+
+.yellow {
+    color: #ebcc20;
+}
+
+.footer {
+    position: relative;
+    bottom: 10px;
+    justify-content: center;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    width: 300px;
+    font-size:small;
+    color: #838E83;
+    height: 50px;
+    text-align: center;
+}
+
+.headerStuff {
+    margin-top: 30px;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 500px; /*Resizes*/
+    background-color: #EBE9E9;
+    border-radius: 25px;
+    padding: 10px;
+    color: #443850;
+}
+
+.headerStuff > p {
+    font-style: italic;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#QuickCompareDiv {
+    margin-top: 30px;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 500px; /*Resizes*/
+    background-color: #EBE9E9;
+    border-radius: 25px;
+    padding: 10px;
+    color: #443850;
+    
+}
+
+#QuickCompareResults {
+    display: grid;
+    grid-template: auto auto auto auto auto / 1fr; /*Resizes*/
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+    position: relative;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 300px; /*Resizes*/
+}
+
+.quickCompareItem {
+    background-color: #3581B8;
+    color: #f8f8f8;
+    border-radius: 25px;
+    margin-left: 0px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 300px; /*Resizes*/
+}
+
+#DeepCompareDiv {
+    margin-top: 30px;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 500px; /*Resizes*/
+    background-color: #EBE9E9;
+    border-radius: 25px;
+    padding: 10px;
+    color: #443850;
+}
+
+#DeepCompareOptionsBox {
+    display: grid;
+    grid-template: auto auto auto auto auto / 1fr 1fr; /*Resizes*/
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+    position: relative;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    width: 450px; /*Resizes*/
+}
+
+.DeepCompareOption {
+    font-size: small;
+}
+
+#DeepCompareDropDownsBox {
+    display: grid;
+    grid-template: auto auto auto auto auto / 1fr 1fr 1fr 1fr 1fr; /*Resizes*/
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    position: relative;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    width: 450px; /*Resizes*/
+}
+
+.DeepCompareDropDown {
+    margin-bottom: 5px;
+    margin-left: 0px;
+}
+
+.DeepCompareDropDown > select{
+    margin-left: 0px;
+}
+
+#DeepCompareResults {
+    display: grid;
+    grid-template: auto auto auto auto auto / 1fr 1fr; /*Resizes*/
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    position: relative;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 460px; /*Resizes*/
+}
+
+.deepCompareItem {
+    background-color: #9B5094;
+    color: #f8f8f8;
+    border-radius: 25px;
+    margin-left: 0px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 225px; /*Resizes*/
+}
+
+.deepCompareItem > ul > li{
+    font-size: small;
+}

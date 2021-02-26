@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Cryptocurrency Thing</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+
+    <section class="headerStuff">
+        <h1>Cryptocurrency Thing:</h1>
+        <p>Because I needed an API that had a lot of endpoints.</p>
+    </section>
+
+    <div id="QuickCompareDiv">
+        <h3>Quick Compare:</h3>
+        <p>Compares the data from the last market day of two Cryptocurrencies.</p>
+        <p>Pick a Cryptocurrency from each drop down, then click "Compare"</p>
+        <select class="CurrencyDropDown" id="QuickCompareFirst"></select>
+        <select class="CurrencyDropDown" id="QuickCompareSecond"></select>
+        <input id="QuickCompareButton" type="submit" value="Compare"></input>
+
+        <div id="QuickCompareResults">
+        </div>
+    </div>
+
+    <div id="DeepCompareDiv">
+        <h3>Deep Compare:</h3>
+        <p>Acts like Quick Compare, but with more customization.</p>
+        <p>To add/remove a new Cryptocurrency, use the "Add" and "Remove" buttons.</p>
+        <p>Just check which boxes you'd like to include in the comparison.</p>
+
+        <div id="DeepCompareOptionsBox">
+            <div class="DeepCompareOption">
+                <input type="checkbox" id="LastOpen" name="LastOpen" value="LastOpen">
+                <label for="LastOpen"> Last Day: Open</label>
+            </div>
+            <div class="DeepCompareOption">
+                <input type="checkbox" id="LastHigh" name="LastHigh" value="LastHigh">
+                <label for="LastHigh"> Last Day: High</label>
+            </div>
+            <div class="DeepCompareOption">
+                <input type="checkbox" id="LastLow" name="LastLow" value="LastLow">
+                <label for="LastLow"> Last Day: Low</label>
+            </div>
+            <div class="DeepCompareOption">
+                <input type="checkbox" id="LastClose" name="LastClose" value="LastClose">
+                <label for="LastClose"> Last Day: Close</label>
+            </div>
+            <div class="DeepCompareOption">
+                <input type="checkbox" id="TodayOpen" name="TodayOpen" value="TodayOpen">
+                <label for="TodayOpen"> Today: Open</label>
+            </div>
+            <div class="DeepCompareOption">
+                <input type="checkbox" id="TodayHigh" name="TodayHigh" value="TodayHigh">
+                <label for="TodayHigh"> Today: High</label>
+            </div>
+            <div class="DeepCompareOption">
+                <input type="checkbox" id="TodayLow" name="TodayLow" value="TodayLow">
+                <label for="TodayLow"> Today: Low</label>
+            </div>
+            <div class="DeepCompareOption">
+                <input type="checkbox" id="TodayClose" name="TodayClose" value="TodayClose">
+                <label for="TodayClose"> Today: Close</label>
+            </div>
+            <div class="DeepCompareOption">
+                <input type="checkbox" id="UseBTCInsteadOfUSD" name="UseBTCInsteadOfUSD" value="UseBTCInsteadOfUSD">
+                <label for="UseBTCInsteadOfUSD"> Use BTC instead of USD</label>
+            </div>
+        </div>
+
+        <div id="DeepCompareDropDownsBox">
+            <div class="DeepCompareDropDown" id="BaseDropDown"><select class="CurrencyDropDown"></select></div>
+        </div>
+
+        <div id="DeepCompareButtons">
+            <input id="DeepCompareSubmit" type="submit" value="Compare"></input>
+            <input id="DeepCompareAdd" type="submit" value="Add"></input>
+            <input id="DeepCompareRemove" type="submit" value="Remove"></input>
+        </div>
+
+        <div id="DeepCompareResults">
+        </div>
+    </div>
+
+    <div class='footer'>
+        <a href='https://github.com/BYU-CS-260-Winter-2021/lab-2-weather-app-Cheeseman1010'>Github Link</a>   |   
+        Cryptocurrency Thing
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+    <script text="type/javascript" src="/script.js"></script>
+
+</body>
+
+</html>
